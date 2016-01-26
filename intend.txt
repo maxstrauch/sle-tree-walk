@@ -1,0 +1,17 @@
+Title: (23/42 chars): 
+Tree-walk in a Nutshell
+
+Learning objective: (133/140 chars)
+A simple Haskell implementation of Nuthatch DSL and core will be created. The audience can learn the function and design of Nuthatch.
+
+Involved software languages:
+ - Nuthatch DSL: "3. A Language for Walks" [1]
+ - Treewalk "language" or paradigm
+
+Involved software technologies:
+Haskell using custom data types (for DSL modelling)
+
+Key references:
+ [1] A. H. Bagge, R. Lämmel: Walk Your Tree Any Way You Want. ICMT 2013. http://softlang.uni-koblenz.de/nuthatch/paper.pdf
+ [2] A. H. Bagge: Analysis and transformation with the nuthatch tree-walking library. SLE Conference 2015. http://dl.acm.org/citation.cfm?doid=2814251.2814264
+ [3] R. Lämmel: Language interpreters. Software Languages Team, CS Faculty, University of Koblenz-Landau. <No URL available>
