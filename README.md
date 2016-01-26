@@ -18,6 +18,9 @@ The "official" intentional information for this project can be found [in the rep
 
 The file `nuthatch.hs` is the outcome of this project: a simple and self-contained implementation of a subset of the Nuthatch DSL. Beside the implementation there is a keynote to present the project and its outcome. This presentation can be found [here](https://github.com/maxstrauch/sle-tree-walk/raw/master/keynote.pdf) (file `keynote.pdf` in repo). Furthermore this document serves as a textual documentation to amend the keynote.
 
+The source file `nuthatch.hs` is also well documented and can be read quite easily.
+
+
 ## Example
 
 In order to run a little example and see that the project works one can simply start the GHCi with `ghci nuthatch.hs` and use the predefined demo tree `atree` along with a predefined walk, e.g. `toStringWalk`. The result (should) look like:
