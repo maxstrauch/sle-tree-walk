@@ -265,8 +265,6 @@ Besides that the implementation is very simple. For example not state variables 
  - [2] A. H. Bagge: Analysis and transformation with the nuthatch tree-walking library. SLE Conference 2015. [http://dl.acm.org/citation.cfm?doid=2814251.2814264](http://dl.acm.org/citation.cfm?doid=2814251.2814264)
  - [3] R. Lämmel: Language interpreters. Software Languages Team, CS Faculty, University of Koblenz-Landau. `<No URL available>`
 
-The literature PDFs can be found in the repo directory `literature`.
-
 # License
 
 Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Click here for details. The license applies to the entire source code.
