@@ -2,6 +2,8 @@
 
 *This project is an implementation of assignment 3 of the [SLE lecture 2015/16](http://softlang.wikidot.com/course:sle1516) held by Prof. Lämmel. On the grounds of the paper [2] from the [SLE conference 2015](http://dblp.uni-trier.de/db/conf/sle/sle2015.html) an introductory guide to the topic of tree walks was created. This project wraps a showcase implementation of a subset of Nuthatch DSL from the paper [1] in Haskell.*
 
+*Be sure to checkout my blog article [here](http://maxstrauch.github.io/2016/02/01/nuthatch.html).*
+
 ## Foreknowledge
 
 A keynote which explains the scheme and paradigm of tree walks as presented in [1, 2] can be found [here](https://github.com/maxstrauch/sle-tree-walk/raw/master/nuthatch-j-keynote.pdf). It is highly recommended to take a look into this resources if one does not have any foreknowledge about Nuthatch or the proposed idea of tree walks.
