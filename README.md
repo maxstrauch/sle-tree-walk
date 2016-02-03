@@ -10,11 +10,11 @@ A keynote which explains the scheme and paradigm of tree walks as presented in [
 
 Furthermore there is a full-featured Java based implementation of the Nuthatch paradigm from [1, 2] called __Nuthatch/J__. The source code is available as a GitHub Project [here](https://github.com/nuthatchery/nuthatch). There is also a project page of Nuthatch with further material available under [http://nuthatchery.org/](http://nuthatchery.org/).
 
-## Intend
+## Intent
 
-In [1] a DSL called Nuthatch was proposed to formalize tree walks. The intend of this project is therefore an implementation of a __simple__ and __self-contained__ solution in __Haskell__ which implements a small subset of the Nuthatch DSL. Thus this project shows the functional principle of Nuthatch by the simplicity of implementation.
+In [1] a DSL called Nuthatch was proposed to formalize tree walks. The intent of this project is therefore an implementation of a __simple__ and __self-contained__ solution in __Haskell__ which implements a small subset of the Nuthatch DSL. Thus this project shows the functional principle of Nuthatch by the simplicity of implementation.
 
-The "official" intentional information for this project can be found [in the repo in file `intend.txt`](https://raw.githubusercontent.com/maxstrauch/sle-tree-walk/master/intend.txt).
+The "official" intentional information for this project can be found [in the repo in file `intent.txt`](https://raw.githubusercontent.com/maxstrauch/sle-tree-walk/master/intent.txt).
 
 # The project solution
 
