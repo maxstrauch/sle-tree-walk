@@ -24,10 +24,10 @@ data Ctx = Ctx String Bool Bool Bool
 
 -- Runs a Walk on a given tree and prints the output
 -- directly to the console
-run :: Tree -> Walk -> IO ()
+runWalk :: Walk -> Tree -> IO ()
 -- `base tree` actually returns a list of strings with each string
 -- representing a output line: print it with some foldl and map magic
-run tree w = putStr (foldr (++) "\n" (base tree))
+runWalk w tree = putStr (foldr (++) "\n" (base tree))
 	where
 		-- The "base" function which basically prints the root node
 		-- of the tree where we know that we have the join point "down"
@@ -133,8 +133,8 @@ eval c (Walk _ stmts) = retmap (reduce (execs c stmts))
 		evalb e (Eq ex1 ex2)       = evale e ex1 == evale e ex2
 
 -- Dumps a walk in a more Nuthatch DSL like manner to the console
-dump :: Walk -> IO ()
-dump (Walk name stmts) = putStr ("walk " ++ name ++ " " ++ (dumpw stmts))
+pp :: Walk -> IO ()
+pp (Walk name stmts) = putStr ("walk " ++ name ++ " " ++ (dumpw stmts))
 	where
 		-- Dumps the entire walk
 		dumpw stmts = "{\n" ++ (apply (dumps "  ") stmts) ++ "}\n"
@@ -235,3 +235,26 @@ atree =
 			(Node "9" [])
 		])
 	]
+
+-- ------------------------------------------------------------
+-- A main function to run the most interesting examples
+
+main = 
+	do
+		-- Run the demo "toString" walk
+		putStrLn "---\n(1) Example: flatten the demo tree to a string:" 
+		runWalk toStringWalk atree
+
+		-- Show details about the join points
+		putStrLn "\n---\n(2) Go through the demo tree and print all nodes"
+		putStrLn "visited and the join point conditions:"
+		runWalk dumpJoinPointsWalk atree
+
+		-- Skip a subtree with a '+' sign as root node
+		putStrLn "\n---\n(3) Skip all subtrees with a '+' at their root"
+		putStrLn "(using the >>walk to 0;<< statement)"
+		runWalk skipPlusWalk atree
+
+		-- Pretty print a walk
+		putStrLn "\n---\n(4) Pretty print the toString walk using the pp function"
+		pp toStringWalk
