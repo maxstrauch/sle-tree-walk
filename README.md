@@ -274,7 +274,7 @@ Besides that the implementation is very simple. For example not state variables 
 
 # License
 
-Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Click here for details. The license applies to the entire source code.
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). [Click here for details](https://creativecommons.org/licenses/by-sa/4.0/). The license applies to the entire source code.
 
 `This program is distributed WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.`
 
